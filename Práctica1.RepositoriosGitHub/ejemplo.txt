@@ -1,0 +1,12 @@
+git init
+git remote add origin URL
+git status
+git add . (añadir todos los cambios).
+git commit -m "primera subida". (aceptar los datos modificados anteriormente)
+git push --set-upstream origin master (se ha subido ala rama master) NUNCA SE SUBE NADA ALA MAIN..
+
+
+mkdir ejemplo
+cd ejemplo
+git repo clone url del repositorio.
+

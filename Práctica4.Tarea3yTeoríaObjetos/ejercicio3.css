@@ -1,0 +1,8 @@
+#icono {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    background-image: url("perrito bebe.jpeg");
+
+}

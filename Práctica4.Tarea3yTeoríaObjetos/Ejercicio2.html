@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+    <link rel="stylesheet" href="ejercicio2.css">
+</head>
+<body>
+    <h1>Registro de Estudiantes</h1>
+    <form id="formularioAlumno">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" onblur="verificarCampo('nombre')" onfocus="ocultarMensajeError()">
+
+        <label for="apellido1">Primer Apellido:</label>
+        <input type="text" id="apellido1" name="apellido1" onblur="verificarCampo('apellido1')" onfocus="ocultarMensajeError()">
+
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" id="apellido2" name="apellido2" onblur="verificarCampo('apellido2')" onfocus="ocultarMensajeError()">
+
+        <label for="fechaNacimiento">Fecha de Nacimiento (dd/mm/yyyy):</label>
+        <input type="text" id="fechaNacimiento" name="fechaNacimiento" placeholder="dd/mm/yyyy" 
+               onblur="verificarFechaNacimiento()" onfocus="ocultarMensajeError()">
+
+        <label for="estudios">Estudios:</label>
+        <select id="estudios" name="estudios" onblur="verificarCampo('estudios')" onfocus="ocultarMensajeError()">
+            <option value="">Seleccione una opción</option>
+            <option value="Grado">Grado</option>
+            <option value="Doctorado">Doctorado</option>
+            <option value="Libre">Libre</option>
+        </select>
+
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso" onblur="verificarCampo('curso')" onfocus="ocultarMensajeError()">
+        </select>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Ej: 123456789" 
+               onblur="verificarCampo('telefono')" onfocus="ocultarMensajeError()">
+
+        <button type="button" id="registrarBtn" onclick="validarFormulario()" disabled>Registrar</button>
+        <button type="button" onclick="cerrarVentana()">Limpiar</button>
+    </form>
+
+    <div id="modal" style="display: none;" onclick="ocultarMensajeError()">
+        <div id="modalContent"></div>
+    </div>
+
+    <script src="ejercicio2.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Animales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galería de Animales</h1>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <div class="animal" onclick="showAnimalInfo('León')">
+                <img src="https://example.com/leon.jpg" alt="León">
+                <p>León</p>
+            </div>
+            <div class="animal" onclick="showAnimalInfo('Tigre')">
+                <img src="https://example.com/tigre.jpg" alt="Tigre">
+                <p>Tigre</p>
+            </div>
+            <div class="animal" onclick="showAnimalInfo('Elefante')">
+                <img src="https://example.com/elefante.jpg" alt="Elefante">
+                <p>Elefante</p>
+            </div>
+            <div class="animal" onclick="showAnimalInfo('Jirafa')">
+                <img src="https://example.com/jirafa.jpg" alt="Jirafa">
+                <p>Jirafa</p>
+            </div>
+        </section>
+
+        <section id="animal-info" class="hidden">
+            <h2 id="animal-name"></h2>
+            <p id="animal-description"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Hecho con ❤️ por Amantes de los Animales</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
